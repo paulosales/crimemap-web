@@ -1,16 +1,27 @@
 import React from 'react'
-import { Map, TileLayer, Popup, FeatureGroup, Circle, LayerGroup, Rectangle, LayersControl, Marker, GeoJSON } from 'react-leaflet'
+import {
+  Map,
+  TileLayer,
+  Popup,
+  FeatureGroup,
+  Circle,
+  LayerGroup,
+  Rectangle,
+  LayersControl,
+  Marker,
+  GeoJSON,
+} from 'react-leaflet'
 import './CrimeMap.css'
 import cities from './geojs-23-mun.json'
 
 function CrimeMap() {
-  let position = [-5.2463974,-39.29745]
+  let position = [-5.2463974, -39.29745]
   const rectangle = [
     [51.49, -0.08],
     [51.5, -0.06],
   ]
   function geoJSONStyle() {
-    console.log(arguments);
+    console.log(arguments)
     return {
       color: '#1f2021',
       weight: 1,
@@ -35,7 +46,7 @@ function CrimeMap() {
           />
         </LayersControl.BaseLayer>
         <LayersControl.Overlay checked name="Cities">
-          <GeoJSON data={cities} style={geoJSONStyle}/>
+          <GeoJSON data={cities} style={geoJSONStyle} />
         </LayersControl.Overlay>
         <LayersControl.Overlay name="Marker with popup">
           <Marker position={position}>
