@@ -21,7 +21,6 @@ function CrimeMap() {
     [51.5, -0.06],
   ]
   function geoJSONStyle() {
-    console.log(arguments)
     return {
       color: '#1f2021',
       weight: 1,
