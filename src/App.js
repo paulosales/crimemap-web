@@ -1,9 +1,13 @@
 import React from 'react'
-import CrimeMap from './components/map/CrimeMap'
 import './App.css'
+import Dashboard from './components/dashboard/Dashboard'
 
 function App() {
-  return <CrimeMap />
+  return (
+    <div>
+      <Dashboard />
+    </div>
+  )
 }
 
 export default App
