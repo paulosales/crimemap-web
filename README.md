@@ -1,7 +1,7 @@
-# crimemap-mobile
-
-Crimemap mobile application
+<p align="center">
+  <img width="150" src="images/logo.png">
+</p>
 
 # crimemap-web
 
-Crimemap web application
+A awesome web tool to make easy the statistical analises of the crimes of the state of Ceará, Brazil.
